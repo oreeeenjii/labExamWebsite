@@ -1,0 +1,346 @@
+<html>
+
+<head>
+<title></title>
+
+
+<style>
+
+html {
+		scroll-behavior: smooth;
+	}
+
+	body {
+	
+		width:100%;
+		overflow-x: hidden;
+		padding: 0;
+		margin: 0;
+		font-family: tahoma;
+        background-color: 0f0f0f;
+		
+	}
+
+    /*--------------- NAVIGATION --------------- */
+
+	nav{
+		width: 100%;
+		height: 80px;
+		position: fixed;
+		z-index: 2;
+		transition: background-color 0.8s linear;
+	
+	
+    }
+
+
+	.nav.scrolled {
+		background-color: #EC883D;
+		transition: background-color 0.8s linear;
+	}
+	
+	
+
+    .navbtn{
+        float: right;
+		margin-right: 20px;
+		float: none;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		margin-top: 0px;
+    }
+
+    .navbtnli{
+        display:inline-block;
+        margin-right: 20px;
+
+        
+    }
+
+    button{
+        padding:10px;
+        font-weight: bold;
+        font-family: Candara;
+        border:none;
+        background-color: rgb(255, 255, 255, 0);
+        color:rgb(43, 43, 43);
+        transition: all .3s ease-in-out;
+        color: white;
+		outline: none;
+    }
+    
+    button:hover{
+        cursor:pointer;
+        color: #EC883D;
+		border: no-border;	
+    }
+
+    #active{
+        padding:10px;
+        font-weight: bold;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        border:none;
+        color: 
+    }
+
+
+    	/*--------------- COVER ---------------*/
+	
+	.cover{
+	
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-size: cover;
+    animation: animate 15s ease-in-out infinite;
+    box-shadow: rgb(253, 2, 2) 0px 20px 30px -10px;
+  
+}	
+        
+@keyframes animate{
+    0%,100%{
+        background-image: url('1.png');
+    }	
+    25%{
+        background-image: url('2.png');
+    }
+    50%{
+        background-image: url('3.png');
+    }	
+    75%{
+        background-image: url('4.png');
+    }				
+}
+
+.header {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    font-size: 20px;
+    font-family: Candara;
+  
+}
+
+.banner_name{
+    color: white;
+    font-family: Candara;
+    font-size: 60px;
+}
+
+
+
+	/*--------------- ABOUT  --------------- */
+
+	.about_section {
+	
+    position: absolute;
+    margin-top: 100vh;
+    width: 100%;  
+    background-color: 0f0f0f;
+    height: auto;
+    color: white;
+}
+
+.about_header{
+    color: white;
+    font-family: tahoma;
+    font-size: 30px;
+    
+}
+
+.aboutBanner{
+    margin-top: 100px;
+    font-family: : Candara;
+    font-size: 50px;
+    color: #EC883D;
+
+}
+
+
+.box{
+    margin-top: 100px;
+
+}
+
+.textBox{
+    font-family: Candara;
+    font-size: 30px;
+    color: #EC883D;
+    font-weight: bold;
+
+}
+
+.imahe{
+    box-shadow: 10px 10px #EC883D;
+}
+
+
+.footer{
+    bakcground-color: #EC883D;
+    width: 100%;
+    height: auto;
+}
+
+.footerContent{
+    height: 200px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+
+
+</style>
+</head>
+
+<body>
+<!------------NAVIGATION------------->
+
+<nav class="nav">
+	
+       
+       
+    <ul class="navbtn">
+        <li class="navbtnli"><a href="#home_button"><button>HOME</button></a></li>
+        <li class="navbtnli"><a href="#about_button"><button>ABOUT</button></a></li>
+        <li class="navbtnli"><a href="#business_button"><button>BUSINESS ACTIVITIES</button></a></li>
+        <li class="navbtnli"><a href="#history_button"><button>HISTORY</button></a></li>
+
+    </ul>    
+
+</nav>
+
+	<!------------COVER------------->
+	<a name="home_button"></a>
+	
+	<div class="cover">  
+	
+	</div>
+	
+	<div class="header">		
+		<center>
+				<font class="banner_name"> <b>technoHUb </b></font><br>
+				<font style = "color: #eca03d;"> U.P. AyalaLand </font>
+		</center>
+	</div>
+
+
+	<!------------ABOUT------------->
+
+    <div class="about_section">  	
+	
+        <a name="about_button"></a>
+            
+        <center><div class = "aboutBanner"><b> ABOUT US </b></div>
+        <br>
+        <br>
+        <img class = "imahe" src = "logo.jpg" height="300px"><br><br>
+
+        <p><br>The U.P.–Ayala Land TechnoHub is an information technology hub jointly <br>
+            developed by the University of the Philippines Diliman and property <br>
+            developer Ayala Land. It is located in Commonwealth Avenue, Barangay U.P. Campus,<br>
+             Quezon City. It occupies 20 hectares (49 acres) within the 37.5 hectares<br>
+              (93 acres) of the U.P. North Science and Technology Park.</p>
+
+
+        
+        <a name="business_button"></a>
+        <div class = "box"> 
+        <img class = "imahe" src = "business.jpg" height="300px">
+        <br>
+        <br>
+        <br>
+        <div class = "textBox"> Business Activities</div>
+        
+        <p>
+            The entire development was listed as an approved IT Park by the Philippine <br>
+            Economic Zone Authority in February 2009. This status makes export-oriented <br>
+            companies located therein eligible for temporary tax holiday, permanent reduced <br>
+            rate of corporate income tax, and other incentives. IBM announced in February<br>
+            2009 that it would open an Innovation Center at the park, its second in Southeast <br>
+            Asia after the one located in Malaysia. Convergys also inaugurated its contact <br>
+            center at TechnoHub in April 2009, along with two others simultaneously opened at <br>
+            Nuvali TechnoHub in Santa Rosa, Laguna and Cebu IT Park in Cebu City.
+
+        
+        </p>
+        </div>
+        <a name="history_button"></a>
+        <div class = "box">
+
+        <img class = "imahe" src = "history.jpg" height="300px">
+        <br>
+        <br>
+        <br>
+        <div class = "textBox"> History</div>
+        
+        <p>
+            The land where the TechnoHub now stands is owned by the University of the Philippines Diliman.<br>
+            Sometime in October 2006, the land was leased to Ayala Land by the state university so an <br>
+            information technology hub could be developed. In that month, Ayala Land announced that it <br>
+            would invest P6 billion over the following five to ten years to develop the Commonwealth Avenue<br>
+             property. Then-Quezon City mayor Feliciano Belmonte, Jr. signed an order in December 2006 <br>
+             adjusting the zoning classification of part of UP Diliman so that the project could legally proceed.<br>
+             <br>
+            The TechnoHub is the second U.P.-Ayala joint project, the first being the U.P. South Technopark <br>
+            along C.P. Garcia and Katipunan Avenues; it is then followed by collaborations on Katipunan Avenue <br>
+            south of the UP Diliman campus. Critics have charged that the site represents stealth <br>
+            privatization of part of the university and a gateway for private sector "vultures" to establish a <br>
+            foothold in the non-commercial university. Seven U.P. students were arrested for raising protests <br>
+            to this end during the hub's inauguration on November 22, 2008 they were released without charges.<br>
+            <br>
+            The first batch of tenants began moving into the technology park in August 2008.[1] In October 2008, <br>
+            Ayala announced that ten startups would move into the northern technology park, in comparison to the <br>
+            nine already located in its southern counterpart.<br>
+            <br>
+            In July 2009, Ayala and UP Diliman's opened a third collaboration, the DOST-PEZA Open Technology <br>
+            Business Incubator, at Katipunan Avenue; the new incubator planned to host companies focused on cloud <br>
+            computing and open-source software development.<br>
+            <br>
+            In 2014, the Quezon City local government planned to auction off the TechnoHub property due to the <br>
+            University of the Philippines alleged failure to pay it P117 million worth of real estate tax. While<br> 
+            under the law, educational institutions are exempt from paying real estate tax, the Quezon City <br>
+            Treasury interprets that the property became taxable the moment the university leased it to a private <br>
+            firm. The auction was called off by the Supreme Court through a temporary restraining order.<br>
+
+        
+        </p>
+        
+
+        <div class = "box" style = "background-color: #EC883D; height: auto; color: 0f0f0f;  box-shadow: ">
+
+            <b>
+
+                <br>
+                <br>
+                UP AyalaLand TECHOHUB | Noriel Achero | 2 BSCS 1<br>
+  
+                <br>
+                <br>
+                </b>
+            </div>
+
+
+
+        </center>
+
+       
+        
+
+
+
+
+
+
+
+
+    
+</body>
+
+
+
+</html>
